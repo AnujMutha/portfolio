@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+	margin: 0;
+	background-color: black;
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+	width: 7.5px;
+}
+body::-webkit-scrollbar-thumb{
+	background: linear-gradient(to bottom ,transparent,#8A2387,#E94057,#F27121,transparent);
+	border-radius: 6px;
+}
+#PageTitle{
+	width: 100%;
+	font-family: 'Righteous', cursive;
+	font-size: 40px;
+	align-self: center;
+	user-select: none;
+	font-weight: lighter;
+	margin-left: 40px;
+
+	/*background:linear-gradient(to left,#8A2387,#E94057,#F27121);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;*/
+
+  /*	background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);*/ 
+  	background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  	background-size:30%; 
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+
+	animation: titleanimation 20s linear infinite;
+
+}
+@keyframes titleanimation{
+	0% {
+		background-position: 0%; 
+		-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	}
+  	
+  	100% {	
+  	background-position: 400%;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  		
+  }	
+}
+#headerSection{
+	width: 100%;
+	user-select: none;
+	height: 120px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1; /*TO RESOLVE OVERLAPPING PROBLEM*/
+
+
+	display: flex;	
+	grid-template-columns: 50fr 50fr;
+
+	background-color: black;
+	animation-name: animate;
+	animation-duration:.5s;
+}
+@keyframes animate {
+  from 
+  {
+  	margin-top: -20%;
+  	opacity: -10;
+
+  }
+  to 
+  {
+  	margin-top: 0;
+  	opacity: 1;
+
+  }
+}
+#menuoptions{
+	font-family: 'Jost', sans-serif;
+	width: 100%;
+	font-size: 16px;
+	display: flex;
+	justify-content: flex-end;
+	align-self: center;
+	margin-right: 40px;
+}
+#menuoptions li{
+	display: inline;
+	text-decoration: none;
+	list-style: none;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.menubutton{
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 0.03em;
+	display: inline-block;
+	position: relative;
+	user-select: none;
+
+}
+.menubutton:after {    
+  content: "";
+  margin-top: 5px;
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background-image: linear-gradient(to right,#8A2387,#E94057,#F27121);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menubutton:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+/*@media screen and (max-width: 768px)*/
+@media (pointer:coarse){
+		#headerSection{
+		width: 100%;
+		user-select: none;
+		height: 120px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1; /*TO RESOLVE OVERLAPPING PROBLEM*/
+
+
+		display: flex;	
+		grid-template-columns: 50fr 50fr;
+
+		background-color: black;
+		animation-name: animate;
+		animation-duration:.5s;
+	}
+}

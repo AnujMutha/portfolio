@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+#footerSection{
+	
+background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+  width: 100%;
+
+}
+#mainfootersection{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#div1{
+
+	display: grid;
+	grid-template-columns: 40fr 60fr;
+	grid-template-rows: minmax(100px,auto);
+	height: 70%;
+}
+#footerheading{
+	font-family: 'Sacramento', cursive;
+	font-size: 70px;
+	padding-top: 20px;
+	align-self: center;
+	text-align: center;
+	color: white;
+	user-select: none;
+}
+#queryandlinks{
+	display: grid;
+	grid-template-columns: 50fr 50fr;
+}
+#questions{
+
+	grid-template-columns: 100fr;
+
+}
+#questiontag{
+	padding: 15px 0 0 25px;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-size: 22px;
+}
+#linktag{
+	padding: 15px 0 0 40%;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-size: 22px;
+
+}
+#innerquestionsdiv{
+	margin-top: 20px;
+	margin-left: 20px;
+	display: grid;
+	grid-row-gap: 1em;
+	column-gap: 15px;
+	grid-template-columns: 10fr 90fr;
+
+}
+#innerlinkdiv{
+	margin-top: 20px;
+	margin-left: 40%;
+	display: grid;
+	grid-row-gap: 1.5em;
+	column-gap: 10px;
+	grid-template-columns: 10fr 90fr;
+}
+#addresstag,#phonetag,#emailtag,#Home,#Projects,#Contact,#Skills{
+
+	align-self: center;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+
+}
+
+#location,#phone,#mail{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-self:center;
+	align-self: center;
+	text-align: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background: #333333;
+}
+#arrow{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-self:center;
+	align-self: center;
+	text-align: right;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: #333333;
+}
+.aProjects,.aHome,.aContact,.aSkills{
+	color: white;
+	text-decoration: none;
+}
+#footersfootersection{
+	width: 100%;
+	height: 100%;
+	/*PARENT CENTER LAYOUT STATEMENTS*/
+	display: flex;
+	justify-content: center;
+	/*END*/
+
+}
+#linedivider{
+	width: 100%;
+	height: 2.5px;
+	background: grey;
+	margin-bottom: 20px;
+	margin-left: 7%;
+	margin-right: 8%;
+
+	/*CHILD CENTER LAYOUT STATEMENTS*/
+	/*END*/
+}
+#mainfootersfootersection{
+	height: 100%;
+	display: grid;
+	grid-template-columns: 50fr 50fr;
+	margin-left: 7%;
+	margin-right: 8%;
+	padding-bottom: 20px;
+}
+#socialmedialinks{
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: flex;
+	justify-content: flex-start;
+}
+#social-icons{
+
+	display: grid;
+	grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
+	grid-column-gap: 20px;
+}
+#copyrightdiv{
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+}
+#copyrightstatement{
+	color: white;
+	font-size: 12px;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 0.5px;
+
+}
+#facebook,#twitter,#instagram,#github{
+	border:1px;
+}
+/* for neuromorphic icons START
+#atagsocialmediaicon{
+	display: flex;
+	background: #222222;
+	height: 30px;
+	width: 30px;
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: .5px .5px 5px -.1px black,
+				-.5px -.5px 5px -.1px #484848;
+
+}END*/
+
+#social-icons a i{
+	color: white;
+	font-size: 20px;
+	transition: .5s;
+
+}
+#social-icons a:hover i{
+
+	transform: scale(1.40);
+}
+#social-icons a:hover .fa-facebook-f{
+	color: #3b5998;
+}
+#social-icons a:hover .fa-twitter{
+	color: #00acee;
+}
+#social-icons a:hover .fa-instagram{
+	font-weight: bold;
+  background:linear-gradient(400deg,#F58529,#FEDA77,#DD2A7B,#8134AF,#515BD4 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#social-icons a:hover .fa-github{
+	color: #707070;
+}
+#social-icons a:hover .fa-linkedin{
+	color: #0e76a8;
+}
+
+/*@media screen and (max-width: 768px){*/
+@media (pointer:coarse){
+	#footerSection{
+	 background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+	width: 100%;
+	height: 100%;
+	}
+
+	#mainfootersection{
+		width: 100%;
+	}
+	#div1{
+		display: grid;
+		grid-template-columns: 100fr;
+		
+	}
+	#queryandlinks{
+		display: grid;
+		grid-template-columns: 100fr;
+		
+	}
+	#footerheading{
+		font-family: 'Sacramento', cursive;
+		font-size: 120px;
+		align-self: center;
+		text-align: center;
+		color: white;
+		font-weight: bolder;
+	}
+	/*IN ORDER TO HIDE "ANY QUESTIONS ?" SECTION*/
+	#questions,#questiontag,#innerquestionsdiv,#location,#phone,#mail,#addresstag,#phoneta,#arrow,#emailtag,#arrows,#linktag{
+		width: 0px;
+		height: 0px;
+		font-size: 0px;
+		visibility: hidden;
+		opacity: 0;
+		margin: 0;
+		padding: 0;
+	}
+	#Home,#Projects,#Contact,#Skills{
+		padding-left: 20px;
+		padding-right: 20px;
+		font-weight: lighter;
+		font-size: 35px;
+	}
+	#links{
+		margin-top: 30px;
+		justify-self: center;
+	}
+	#innerlinkdiv{
+		margin-top: 0px;
+		margin-left: 0%;
+		align-self: center;
+		display: inline-flex;
+	}
+	#linedivider{
+		width: 0px;
+		height: 0px;
+		background: transparent;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#mainfootersfootersection{
+		height: 100%;
+		display: grid;
+		grid-template-columns: 100fr;
+		margin-left: 0px;
+		margin-right: 0px;
+		
+	}
+	#socialmedialinks{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
+	#social-icons{
+		display: grid;
+		grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
+		grid-column-gap: 60px;
+
+	}
+	#copyrightdiv{
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		background: transparent;
+		align-items: center;
+
+	}
+
+	#social-icons a i{
+		color: white;
+		font-size: 32.5px;
+		transition: .5s;
+
+	}
+	#copyrightstatement{
+		font-size: 22.5px;
+		font-weight: lighter;
+		padding-bottom: 10px;
+	}
+}
