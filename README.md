@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 Welcome to My Portfolio Site,
 Here you will find everything related to me.
